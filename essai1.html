@@ -355,9 +355,36 @@
                         sources: { 720: "Video/video720p.mp4", 1080: "Video/video1080p.mp4", 2160: "Video/video4k.mp4" },
                         resolutions: [720, 1080, 2160],
                     },
+                    
+                    {
+                        sources: { 144: "Video/image_fixe/cat1/_144.mp4", 240: "Video/image_fixe/cat1/_240.mp4", 360: "Video/image_fixe/cat1/_360.mp4",
+                                   480: "Video/image_fixe/cat1/_480.mp4",720: "Video/image_fixe/cat1/_720.mp4",1080: "Video/image_fixe/cat1/_1080.mp4"
+                         },
+                        resolutions: [144,240,360,480,720,1080],
+                    },
+
+                    {
+                        sources: { 240: "Video/image_fixe/cat2/_240.mp4", 360: "Video/image_fixe/cat2/_360.mp4",
+                                   480: "Video/image_fixe/cat2/_480.mp4",720: "Video/image_fixe/cat2/_720.mp4",1080: "Video/image_fixe/cat2/_1080.mp4"
+                        },
+                        resolutions: [240,360,480,720, 1080],
+                    },
+                    {
+                        sources: { 360: "Video/radio/cat1/_360.mp4",480: "Video/radio/cat1/_480.mp4",
+                                   720: "Video/radio/cat1/_720.mp4",1080: "Video/radio/cat1/_1080.mp4"
+                        },
+                        resolutions: [360,480,720, 1080],
+                    },
+                    {
+                        sources: { 240: "Video/foot/cat1/_240.mp4", 360: "Video/foot/cat1/_360.mp4",
+                                   480: "Video/foot/cat1/_480.mp4",720: "Video/foot/cat1/_720.mp4",1080: "Video/foot/cat1/_1080.mp4"
+                        },
+                        resolutions: [240,360,480,720, 1080],
+                    },
                 ];
 
                 const resolutionLabels = {
+                    144:"144p",
                     240: "240p",
                     360: "360p",
                     480: "480p",
@@ -379,15 +406,37 @@
                 let videosVisionnees = 0;
                 let sessionsCompletes = 0;
 
+                let videosVisionnees_1 = []; // Tableau pour stocker les vidéos visionnées
+
+                function tirerVideoAleatoire() {
+                    // Filtrer les vidéos non encore visionnées
+                    let videosNonVisionnees = videos.filter(video => !videosVisionnees_1.includes(video));
+
+                    if (videosNonVisionnees.length === 0) {
+                        alert("Toutes les vidéos ont été visionnées dans cette session !");
+                        return null; // Plus de vidéos disponibles
+                    }
+
+                    // Sélectionner une vidéo aléatoire parmi celles non visionnées
+                    let randomIndex = Math.floor(Math.random() * videosNonVisionnees.length);
+                    let videoChoisie = videosNonVisionnees[randomIndex];
+
+                    // Ajouter la vidéo choisie à la liste des vidéos visionnées
+                    videosVisionnees_1.push(videoChoisie);
+
+                    return videoChoisie;
+                }
+
                 // Fonction pour tirer une résolution aléatoire parmi celles disponibles pour une vidéo
                 function tirerResolutionAleatoire(video) {
                     let availableResolutions = video.resolutions;
                     let randomIndex = Math.floor(Math.random() * availableResolutions.length);
                     return availableResolutions[randomIndex];
                 }
-
+                
                 // Fonction pour jouer une paire de résolutions pour une vidéo
-                function jouerResolutionPaire(video) {
+                function jouerResolutionPaire() {
+                    let video = tirerVideoAleatoire(); // Sélectionner une vidéo aléatoire
                     let resolution1 = tirerResolutionAleatoire(video);
                     let resolution2 = tirerResolutionAleatoire(video);
 
@@ -458,7 +507,7 @@
                             videosVisionnees++;
                             if (videosVisionnees < nombreDeSessions) {
                                 currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-                                jouerResolutionPaire(videos[currentVideoIndex]);
+                                jouerResolutionPaire();
                             } else {
                                 alert("Toutes les sessions sont terminées !");
                             }
@@ -467,7 +516,7 @@
                 }
 
                 // Commencer avec la première vidéo
-                jouerResolutionPaire(videos[currentVideoIndex]);
+                jouerResolutionPaire();
             }
 
             
