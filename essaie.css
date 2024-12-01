@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+form {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Pour fusionner les bordures */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Bordure autour des cellules */
+    padding: 8px; /* Espacement interne des cellules */
+    text-align: left; /* Alignement du texte */
+}
+
+th {
+    background-color: #f2f2f2; /* Couleur de fond pour les en-têtes */
+    font-weight: bold; /* Met en gras les titres des colonnes */
+}
+
+.tab {
+    display: flex;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Styles pour le contenu des onglets */
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+

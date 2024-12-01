@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier : Impact de la Résolution Vidéo</title>
+    <link rel="stylesheet" href="essaie.css"> <!-- Lien vers une feuille de style externe -->
+</head>
+<body>
+    <header>
+        <h1>Atelier : Impact de la Résolution Vidéo</h1>
+    </header>
+
+    <div class="tab">
+        <button class="tablink" onclick="openTab(event, 'introduction')">Introduction</button>
+        <button class="tablink" onclick="openTab(event, 'resolutions')">Résolutions Vidéo</button>
+        <button class="tablink" onclick="openTab(event, 'streaming-quality')">Qualité des Plateformes de Streaming</button>
+        <button class="tablink" onclick="openTab(event, 'impact-environnemental')">Impact Environnemental</button>
+        <button class="tablink" onclick="openTab(event, 'videos')">Vidéos</button>
+        <button class="tablink" onclick="openTab(event, 'sensibilisation')">Sensibilisation</button>
+    </div>
+
+    <div id="introduction" class="tab-content">
+       <section id="introduction1">
+            <h2>Introduction à l'Atelier</h2>
+            <p>Bienvenue à notre atelier consacré à un sujet crucial : l'impact de nos choix de résolution vidéo sur l'empreinte carbone d'Internet. À l'ère du numérique, la consommation de contenu en ligne, qu'il s'agisse de vidéos, de films ou de streaming en direct, connaît une croissance exponentielle. Cependant, ce plaisir a un coût environnemental souvent méconnu.</p>
+            <p>Au cours de cet atelier, nous explorerons comment le choix de la résolution vidéo peut influencer la consommation d'énergie et, par conséquent, les émissions de gaz à effet de serre. Nous discuterons des différentes résolutions, de leur impact sur l'environnement, et des actions simples que chacun de nous peut entreprendre pour réduire notre empreinte carbone numérique.</p>
+            <p>Rejoignez-nous pour une session interactive et informative qui vous permettra de mieux comprendre comment nos choix en matière de vidéo peuvent contribuer à un avenir plus durable !</p>
+        </section>
+    </div>
+
+    <div id="resolutions" class="tab-content">
+        <section id="resolutions1">
+            <h2>Comprendre les Résolutions Vidéo</h2>
+            <p>La résolution d'une vidéo fait référence au nombre de pixels qui composent l'image. Plus la résolution est élevée, plus la qualité d'image est claire et détaillée. Cependant, une résolution plus élevée nécessite également plus de bande passante, ce qui peut augmenter l'impact carbone associé à la diffusion de contenu.</p>
+            
+            <h3>Voici quelques résolutions courantes :</h3>
+            <ul>
+                <li><strong>480p (SD)</strong>: Qualité standard, environ 0,7 Go/heure. Idéale pour des connexions Internet plus lentes.</li>
+                <li><strong>720p (HD)</strong>: Haute définition, environ 1,5 Go/heure. Bon compromis entre qualité et utilisation de données.</li>
+                <li><strong>1080p (Full HD)</strong>: Très haute définition, environ 3 Go/heure. Excellente qualité, mais nécessite une bande passante élevée.</li>
+                <li><strong>4K (Ultra HD) – 2160p </strong> : Résolution quatre fois supérieure au Full HD, avec des détails beaucoup plus fins. C'est la norme pour les téléviseurs 4K, environ 7 à 10 Go/heure </li>
+            </ul>
+
+            <p>Avant de visionner les vidéos, réfléchissez à la résolution que vous choisissez et à son impact potentiel sur l'environnement.</p>
+        <section id="data-usage">
+            <h4>Comprendre le Go/heure</h4>
+            <p>Le Go/heure indique la quantité de données (en gigaoctets) qu'une vidéo nécessite pour être diffusée pendant une heure. Cela aide à comprendre l'impact de la qualité vidéo sur la bande passante utilisée et, par conséquent, sur l'empreinte carbone associée à la diffusion de contenu en ligne.</p>
+        </section>
+        </section>
+    </div>
+
+    <div id="streaming-quality" class="tab-content">
+        <section id="streaming-quality1">
+            <h2>Niveaux de Qualité Proposés par les Principales Plateformes de Streaming</h2>
+            <h2>Tableau des Résolutions par Diffuseur de Contenus</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Diffuseur\Résolution</th>
+                        <th>SD (480p)</th>
+                        <th>HD (720p)</th>
+                        <th>Full HD (1080p)</th>
+                        <th>4K (2160p)</th>
+                        <th>8K (4320p)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                <td>Netflix</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Non</td>
+            </tr>
+            <tr>
+                <td>Prime Video</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Non</td>
+            </tr>
+            <tr>
+                <td>YouTube</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Oui</td>
+            </tr>
+            <tr>
+                <td>Disney+</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Non</td>
+            </tr>
+            <tr>
+                <td>Apple TV+</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Oui</td>
+                <td>Non</td>
+                <td>Non</td>
+            </tr>
+        </tbody>
+    </table>
+
+        </section>
+
+      
+    </div>
+
+    <div id="impact-environnemental" class="tab-content">
+        <section id="impact-environnemental1">
+            <h2>Impact Environnemental du Streaming Vidéo</h2>
+            <p>Le streaming vidéo est une activité gourmande en ressources, non seulement en termes de bande passante, mais aussi en énergie. La consommation d'énergie du streaming dépend de nombreux facteurs, notamment la qualité vidéo, l'infrastructure utilisée par les plateformes (serveurs, réseaux), et l'appareil de l'utilisateur.</p>
+        </section>
+
+        <section id="empreinte-carbone">
+            <h2>Empreinte Carbone du Streaming Vidéo</h2>
+            <p>Lorsqu'on se concentre sur l'empreinte carbone globale d'une heure de streaming, nous utilisons les émissions de CO2 pour mesurer l'impact environnemental total, tandis que nous utilisons les kWh pour quantifier la consommation d'énergie lors de la phase d'utilisation.</p>
+        </section>
+
+        <section id="consommation-energie">
+            <h2>Décomposition de la Consommation d'Énergie</h2>
+
+            <p>Pour comprendre l'impact environnemental du streaming vidéo, il est essentiel de se pencher sur les trois principaux éléments qui consomment de l'énergie : les data centers qui hébergent et traitent les contenus, le réseau qui transporte les données, et les équipements des utilisateurs finaux qui affichent la vidéo. Chacun de ces niveaux joue un rôle dans l’empreinte carbone globale du streaming.</p>
+            <h3>a) Centres de données</h3>
+            <p>Les centres de données consomment une grande partie de l'énergie pour stocker et diffuser les vidéos. Selon certaines études, les centres de données mondiaux consomment environ 1 % à 2 % de l’électricité mondiale, avec une part importante dédiée au streaming vidéo.</p>
+        
+            <h3>b) Réseaux de transmission</h3>
+            <p>Les réseaux de transmission (les infrastructures des FAI, réseaux 4G/5G, fibres optiques, etc.) consomment aussi une part importante de l’énergie. Une étude de l'International Energy Agency (IEA) a estimé que les réseaux de transmission représentent environ 25 % de l'énergie totale consommée par le streaming.</p>
+        
+            <h3>c) Appareils utilisateurs</h3>
+            <p>Les appareils des utilisateurs (smartphones, tablettes, ordinateurs, téléviseurs) consomment également une quantité non négligeable d’énergie. Par exemple :</p>
+            <ul>
+                <li><strong>Téléviseurs intelligents</strong> consomment environ 0,05 à 0,2 kWh par heure.</li>
+                <li><strong>Ordinateurs portables</strong> consomment environ 0,02 à 0,05 kWh par heure.</li>
+                <li><strong>Smartphones</strong> consomment environ 0,01 à 0,03 kWh par heure.</li>
+            </ul>
+        </section>
+       
+    </div>
+
+   
+
+    <div id="videos" class="tab-content">
+        <section id="videos1">
+            <h2>Vidéos à Visionner</h2>
+
+            <p>
+                Vous allez visionner la même vidéo dans deux résolutions différentes, tirées au hasard. 
+                Une fois la vidéo terminée, nous vous inviterons à donner votre retour sur votre expérience 
+                de visionnage. Cela nous aidera à comprendre l'impact des différentes résolutions.
+            </p>
+            
+            <section id="feedback1" style="display: block;">
+                <form id="userForm">
+                    <label for="pseudo">Veuillez entrer votre pseudo :</label>
+                    <input type="text" id="pseudo" name="pseudo" required>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+
+            <script>
+                let pseudo_1 = "";
+                document.getElementById('userForm').onsubmit = function(event) {
+                    event.preventDefault(); // Empêche le rechargement de la page
+                    // Cachez le formulaire de pseudo après soumission si nécessaire
+                    pseudo_1 = document.getElementById('pseudo').value;
+                    console.log("Pseudo de l'utilisateur : " + pseudo_1);
+                    document.getElementById('feedback1').style.display = 'none';
+                }
+            </script>
+
+            
+            <label for="temps">Combien de minutes avez-vous ?</label>
+            <select id="temps" name="temps">
+                <option value="1">1 minute</option>
+                <option value="2">2 minutes</option>
+                <option value="3">3 minutes</option>
+                <option value="4">4 minutes</option>
+                <option value="5">5 minutes</option>
+            </select>
+            <button id="startButton">Commencer</button>
+
+            <script>
+                let pseudo = "";
+                let temps = 0;
+            
+                // Lorsque l'utilisateur soumet le formulaire pour entrer le pseudo
+                document.getElementById('userForm').onsubmit = function(event) {
+                    event.preventDefault(); // Empêche le rechargement de la page
+                    pseudo = document.getElementById('pseudo').value;
+                    console.log("Pseudo de l'utilisateur : " + pseudo);
+                    document.getElementById('feedback1').style.display = 'none'; // Cache le formulaire
+                };
+            
+                // Lorsque l'utilisateur clique sur le bouton "Commencer"
+                document.getElementById('startButton').onclick = function(event) {
+                    temps = document.getElementById('temps').value;
+                    console.log("Temps choisi : " + temps + " minutes");
+            
+                    // Envoyer les données à votre backend
+                    sendData(pseudo, temps);
+                };
+            
+                // Fonction pour envoyer les données au backend
+                function sendData(pseudo, temps) {
+                    const data = {
+                        pseudo: pseudo,
+                        temps: temps
+                    };
+            
+                    fetch('http://localhost:8080/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data) // Envoi des données au format JSON
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Réponse du serveur:', data);
+                        alert("Données envoyées avec succès!");
+                    })
+                    .catch(error => {
+                        console.error('Erreur:', error);
+                        alert("Erreur lors de l'envoi des données");
+                    });
+                }
+            </script>
+
+           
+        
+            <!-- Zone de vidéo -->
+
+            <div class="video-container">
+                <video id="videoPlayer" width="640" height="360" controls>
+                    <source id="videoSource" src="Video/Ulysse240.mkv" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <p id="tailleAffichage">Taille de visionnage : Inconnue</p>
+            </div>
+        </section>
+
+        <section id="feedback" style="display: none;">
+            <h2>Retour d'Expérience</h2>
+            <form action="#" method="post">
+                <label for="resolution1">D'après vous, quelle était la résolution de la première vidéo ?</label>
+                <select id="resolution1" name="resolution">
+                    <option value="480p">240p</option>
+                    <option value="480p">360p</option>
+                    <option value="480p">480p</option>
+                    <option value="720p">720p</option>
+                    <option value="1080p">1080p</option>
+                    <option value="4k">4k</option>
+                </select>
+
+                <br>
+                <br>
+                <label for="resolution2">D'après vous, quelle était la résolution de la deuxième vidéo ?</label>
+                <select id="resolution2" name="resolution">
+                    <option value="480p">240p</option>
+                    <option value="480p">360p</option>
+                    <option value="480p">480p</option>
+                    <option value="720p">720p</option>
+                    <option value="1080p">1080p</option>
+                    <option value="4k">4k</option>
+
+                </select>
+                <br>
+                <br>
+
+                <label>La qualité de l'image était-elle satisfaisante pour vous pour la première vidéo ?</label><br>
+                <input type="radio" name="imageQuality" value="verySatisfactory"> Oui, très satisfaisante<br>
+                <input type="radio" name="imageQuality" value="correct"> Correcte<br>
+                <input type="radio" name="imageQuality" value="notSatisfactory"> Pas vraiment satisfaisante<br>
+                <input type="radio" name="imageQuality" value="bad"> Mauvaise qualité<br>
+                <input type="radio" name="imageQuality" value="unwatchable"> Vidéo très difficile à regarder<br><br>
+
+
+                <label>La qualité de l'image était-elle satisfaisante pour vous pour la deuxiéme vidéo ?</label><br>
+                <input type="radio" name="imageQuality" value="verySatisfactory"> Oui, très satisfaisante<br>
+                <input type="radio" name="imageQuality" value="correct"> Correcte<br>
+                <input type="radio" name="imageQuality" value="notSatisfactory"> Pas vraiment satisfaisante<br>
+                <input type="radio" name="imageQuality" value="bad"> Mauvaise qualité<br>
+                <input type="radio" name="imageQuality" value="unwatchable"> Vidéo très difficile à regarder<br><br>
+
+
+                <label>Si vous deviez regarder une longue vidéo (comme un film), quelle résolution choisiriez-vous entre la première et la deuxième vidéo ?</label><br>
+                <input type="radio" name="preferredResolution" value="first"> La première résolution<br>
+                <input type="radio" name="preferredResolution" value="second"> La deuxième résolution<br><br>
+
+                <!-- Question sur la fluidité pour la première résolution -->
+                <label>Comment évalueriez-vous la fluidité de la lecture de la première vidéo ?</label><br>
+                <input type="radio" name="fluidity1" value="verySmooth"> Très fluide<br>
+                <input type="radio" name="fluidity1" value="quiteSmooth"> Assez fluide<br>
+                <input type="radio" name="fluidity1" value="sometimesChoppy"> Parfois saccadée<br>
+                <input type="radio" name="fluidity1" value="veryChoppy"> Très saccadée<br><br>
+
+                <!-- Question sur la fluidité pour la deuxième résolution -->
+                <label>Comment évalueriez-vous la fluidité de la lecture de la deuxième vidéo ?</label><br>
+                <input type="radio" name="fluidity2" value="verySmooth"> Très fluide<br>
+                <input type="radio" name="fluidity2" value="quiteSmooth"> Assez fluide<br>
+                <input type="radio" name="fluidity2" value="sometimesChoppy"> Parfois saccadée<br>
+                <input type="radio" name="fluidity2" value="veryChoppy"> Très saccadée<br><br>
+
+                
+                
+                <label for="commentaire">Commentaires supplémentaires :</label><br>
+                <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea><br>
+
+                <input type="submit" value="Soumettre">
+            </form>
+
+           
+            
+            <div id="correctAnswers" style="display: none;">
+                <h3>Voici les vraies résolutions des vidéos :</h3>
+                <p id="realResolution1"></p>
+                <p id="realResolution2"></p>
+            </div>
+        </section>
+
+        
+        
+        <script>
+           
+            
+
+            document.getElementById('startButton').onclick = function() {
+                var minutes = parseInt(document.getElementById('temps').value); // Récupérer la valeur de l'élément <select>
+                if (minutes >= 1 && minutes <= 5) {
+                    // Utiliser le nombre de minutes comme le nombre de sessions
+                    visionnerVideosAleatoires(minutes);
+                } else {
+                    alert("Veuillez sélectionner un nombre de minutes valide.");
+                }
+            };
+        
+            // Fonction principale pour faire visionner les vidéos dans deux résolutions
+            function visionnerVideosAleatoires(nombreDeSessions) {
+                // Liste des vidéos avec les résolutions disponibles
+                var videos = [
+                    {
+                        sources: { 240: "Video/Ulysse240.mkv", 360: "Video/Ulysse360.mkv", 480: "Video/Ulysse480.mp4" },
+                        resolutions: [240, 360, 480],
+                    },
+                    {
+                        sources: { 720: "Video/video720p.mp4", 1080: "Video/video1080p.mp4", 2160: "Video/video4k.mp4" },
+                        resolutions: [720, 1080, 2160],
+                    },
+                ];
+
+                const resolutionLabels = {
+                    240: "240p",
+                    360: "360p",
+                    480: "480p",
+                    720: "720p",
+                    1080: "1080p",
+                    2160: "4k"
+                };
+
+                var currentVideoIndex = 0;
+                var videoPlayer = document.getElementById('videoPlayer');
+                var videoSource = document.getElementById('videoSource');
+                var resolutionLabel = document.getElementById('resolutionLabel');
+                var feedbackSection = document.getElementById('feedback');
+                var resolution1Input = document.getElementById('resolution1');
+                var resolution2Input = document.getElementById('resolution2');
+                var correctAnswersDiv = document.getElementById('correctAnswers');
+                var realResolution1Text = document.getElementById('realResolution1');
+                var realResolution2Text = document.getElementById('realResolution2');
+                let videosVisionnees = 0;
+                let sessionsCompletes = 0;
+
+                // Fonction pour tirer une résolution aléatoire parmi celles disponibles pour une vidéo
+                function tirerResolutionAleatoire(video) {
+                    let availableResolutions = video.resolutions;
+                    let randomIndex = Math.floor(Math.random() * availableResolutions.length);
+                    return availableResolutions[randomIndex];
+                }
+
+                // Fonction pour jouer une paire de résolutions pour une vidéo
+                function jouerResolutionPaire(video) {
+                    let resolution1 = tirerResolutionAleatoire(video);
+                    let resolution2 = tirerResolutionAleatoire(video);
+
+                    // S'assurer que les deux résolutions sont différentes
+                    while (resolution1 === resolution2 && video.resolutions.length > 1) {
+                        resolution2 = tirerResolutionAleatoire(video);
+                    }
+
+                    console.log(`Résolutions sélectionnées : ${resolution1} et ${resolution2}`);
+
+                    let resolutions = [resolution1, resolution2];
+                    let currentResolutionIndex = 0;
+
+                    function jouerProchaineResolution() {
+                        if (currentResolutionIndex < resolutions.length) {
+                            let resolution = resolutions[currentResolutionIndex];
+                            videoSource.src = video.sources[resolution];
+                            //resolutionLabel.innerText = resolutionLabels[resolution];
+                            console.log(`Lecture de la vidéo en résolution ${resolutionLabels[resolution]}`);
+                            videoPlayer.load();
+                            videoPlayer.play();
+
+                            currentResolutionIndex++;
+                        } else {
+                            afficherFeedback(resolution1, resolution2);
+                        }
+                    }
+
+                    // Commencer avec la première résolution
+                    jouerProchaineResolution();
+
+                    // Passer à la prochaine résolution quand la vidéo actuelle se termine
+                    videoPlayer.onended = jouerProchaineResolution;
+                }
+
+                // Fonction pour afficher le feedback après les deux vidéos
+                function afficherFeedback(resolution1, resolution2) {
+                    feedbackSection.style.display = 'block';
+                    resolution1Input.value = resolutionLabels[resolution1];
+                    resolution2Input.value = resolutionLabels[resolution2];
+
+                    feedbackSection.onsubmit = function (event) {
+                        event.preventDefault();
+                        // Récupérer les réponses de l'utilisateur
+                        const userResolution1 = resolution1Input.value;
+                        const userResolution2 = resolution2Input.value;
+
+                        // Comparer les réponses de l'utilisateur avec les résolutions réelles
+                        const isCorrect1 = userResolution1 === resolutionLabels[resolution1];
+                        const isCorrect2 = userResolution2 === resolutionLabels[resolution2];
+
+                        // Afficher le feedback
+                        realResolution1Text.innerText = `La première vidéo était en : ${resolutionLabels[resolution1]} (${isCorrect1 ? 'Correct' : 'Incorrect'})`;
+                        realResolution2Text.innerText = `La deuxième vidéo était en : ${resolutionLabels[resolution2]} (${isCorrect2 ? 'Correct' : 'Incorrect'})`;
+
+                        // Modifier les styles en fonction des résultats
+                        realResolution1Text.style.color = isCorrect1 ? 'green' : 'red';
+                        realResolution2Text.style.color = isCorrect2 ? 'green' : 'red';
+
+                        // Afficher les bonnes réponses et le feedback
+                        correctAnswersDiv.style.display = 'block';
+
+                        // Passer à la session suivante après un délai
+                        setTimeout(() => {
+                            correctAnswersDiv.style.display = 'none';
+                            feedbackSection.style.display = 'none';
+
+                            videosVisionnees++;
+                            if (videosVisionnees < nombreDeSessions) {
+                                currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+                                jouerResolutionPaire(videos[currentVideoIndex]);
+                            } else {
+                                alert("Toutes les sessions sont terminées !");
+                            }
+                        }, 2000); // Délai de 2 secondes avant la prochaine session
+                    };
+                }
+
+                // Commencer avec la première vidéo
+                jouerResolutionPaire(videos[currentVideoIndex]);
+            }
+
+            
+        </script>
+
+        <script>
+            // Fonction pour tirer une taille de fenêtre de visionnage au hasard
+            function tirerTailleAleatoire() {
+                var tailles = ['ecran', 'ordinateur', 'tablette', 'telephone'];
+                var tailleTiree = tailles[Math.floor(Math.random() * tailles.length)];
+                return tailleTiree;
+            }
+
+            // Fonction pour ajuster la taille de la vidéo
+            function ajusterTailleVideo(taille) {
+                var videoPlayer = document.getElementById('videoPlayer');
+                var tailleAffichage = document.getElementById('tailleAffichage');
+
+                if (taille === 'ecran' || taille === 'ordinateur') {
+                    // Mettre la vidéo en plein écran
+                    if (videoPlayer.requestFullscreen) {
+                        videoPlayer.requestFullscreen();
+                    } else if (videoPlayer.mozRequestFullScreen) { // Pour Firefox
+                        videoPlayer.mozRequestFullScreen();
+                    } else if (videoPlayer.webkitRequestFullscreen) { // Pour Chrome, Safari et Opera
+                        videoPlayer.webkitRequestFullscreen();
+                    } else if (videoPlayer.msRequestFullscreen) { // Pour IE/Edge
+                        videoPlayer.msRequestFullscreen();
+                    }
+                    tailleAffichage.innerText = 'ordinateur';
+                } 
+                
+                else if (taille === 'tablette') {
+                    videoPlayer.style.width = '600px'; // Taille pour une tablette
+                    videoPlayer.style.height = '337.5px'; // Aspect ratio 16:9
+                    tailleAffichage.innerText = 'tablette';
+                } 
+                else if (taille === 'telephone') {
+                    videoPlayer.style.width = '360px'; // Taille pour un téléphone
+                    videoPlayer.style.height = '202.5px'; // Aspect ratio 16:9
+                    tailleAffichage.innerText = 'téléphone';
+                }
+
+                tailleAffichage.innerText = "Taille de visionnage : " + taille;
+            }
+
+            // Fonction principale pour tirer la taille de fenêtre et ajuster la vidéo
+            function ajusterVisionnage() {
+                var tailleTiree = tirerTailleAleatoire();
+                ajusterTailleVideo(tailleTiree);
+            }
+
+            // Appeler la fonction pour ajuster la taille de visionnage au hasard
+            ajusterVisionnage();
+        </script>
+        
+        
+
+        
+    
+        <section>
+            <script>
+                // Consommation d'énergie par heure pour 1080p en kWh
+                const energyConsumptionPerHour = 1.5; // Valeur d'exemple, ajustez selon les études
+                const co2PerKWh = 108; // en kg de CO2 par kWh (108 g)
+                
+                // Fonction pour calculer l'empreinte carbone
+                function calculateCarbonFootprint(duration) {
+                    const hours = duration / 3600; // Convertir la durée en heures
+                    const totalEnergyUsed = hours * energyConsumptionPerHour; // Énergie utilisée en kWh
+                    const carbonFootprint = totalEnergyUsed * co2PerKWh; // Empreinte carbone en kg
+                    return carbonFootprint;
+                }
+            
+                // Écouter l'événement loadedmetadata
+                document.getElementById('videoPlayer').addEventListener('loadedmetadata', function() {
+                    const duration = this.duration; // Durée de la vidéo en secondes
+                    const carbonFootprint = calculateCarbonFootprint(duration);
+                    document.getElementById('duration').innerText = `Durée de la vidéo : ${duration.toFixed(2)} secondes`;
+
+                    // Afficher le résultat
+                    document.getElementById('result').innerText = `L'empreinte carbone de cette vidéo est de ${carbonFootprint.toFixed(2)} g de CO2.`;
+                });
+            </script>
+        </section>
+    </div>
+
+   
+
+  
+    <div id="sensibilisation" class="tab-content">
+        <section id="sensibilisation1">
+            <h2>Sensibilisation à l'Empreinte Carbone du Streaming Vidéo</h2>
+            <p>Une vidéo qui consomme environ 1 kg de CO2 équivaut à de nombreux impacts environnementaux. Pour mettre cela en perspective :</p>
+            <ul>
+                <li><strong>Conduite d'une voiture :</strong> 1 kg de CO2 est approximativement l'équivalent des émissions de CO2 produites par un trajet de 4 à 5 km en voiture, selon le type de véhicule.</li>
+                <li><strong>Émissions d'une chaudière :</strong> Cela correspond également à la quantité de CO2 émise par le chauffage d'un foyer pendant une heure en hiver.</li>
+                <li><strong>Impact sur l'environnement :</strong> Si des millions de personnes choisissent de regarder des vidéos en haute définition, cela peut rapidement se traduire par des milliers de tonnes de CO2 ajoutées à l'atmosphère, contribuant au changement climatique.</li>
+            </ul>
+            <p>Chaque geste compte. En choisissant des résolutions plus basses pour le streaming, nous pouvons tous contribuer à réduire notre empreinte carbone collective.</p>
+        </section>
+    </div>
+
+    <script>
+        function openTab(event, tabId) {
+            // Cacher tous les contenus des onglets
+            var tabContent = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+                tabContent[i].classList.remove("active");
+            }
+
+            // Désactiver tous les boutons d'onglet
+            var tabLinks = document.getElementsByClassName("tablink");
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active");
+            }
+
+            // Afficher le contenu de l'onglet sélectionné et activer le bouton
+            document.getElementById(tabId).style.display = "block";
+            document.getElementById(tabId).classList.add("active");
+            event.currentTarget.classList.add("active");
+        }
+
+        // Activer le premier onglet au chargement de la page
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('.tab button').click();
+        });
+    </script>
+
+   
+
+    
+
+    <footer>
+        <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
